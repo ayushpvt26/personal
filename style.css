@@ -217,7 +217,7 @@ max-width: 100%;
   transform: scale(1.2); /* Increase the scale factor for zooming in */
 }
 
-.page2 h1,.page3 h1{
+.page2 h1,.page3 h1,.page4 h1{
   font-family: Poppins,sans-serif;
   color: rgb(78, 148, 210);
   font-size: 20px;
@@ -237,4 +237,99 @@ footer a {
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
+}
+
+.page4 {
+  text-align: center;
+  height: auto;
+  border: 0px solid white;
+  max-height: 100%;
+  padding: 7px;
+  box-sizing: border-box;
+ 
+  flex-wrap: wrap; /* Allow divs to wrap onto the next line on smaller screens */
+  justify-content: center; /* Center the divs horizontally */
+}
+
+.p1 {
+
+  width: 100%; /* Make the width 100% for smaller screens */
+  max-width: 560px;
+  height: 40vh;
+  border: 0px solid rgb(80, 72, 72);
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(132, 129, 129, 0.598);
+
+    
+ position:relative;
+ overflow: hidden;
+ display: flex;
+ 
+
+
+
+}
+.p1 p{
+  color: azure;
+  text-align: left;
+}
+
+
+.context {
+  flex: 1;
+  padding:20px;
+}
+.context img{
+
+  float: left;
+text-align: right;
+
+}
+
+.transparent-button {
+  background-color: rgb(11, 10, 10);
+
+  border: 2px solid #7c7676; /* Optional: Add a border for better visibility */
+  color: #c8b8b8; /* Set the text color to match the border color or any other color you prefer */
+  padding: 1px 3 px; /* Adjust the padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+.transparent-button:hover {
+  background-color: rgba(95, 51, 228, 0.2); /* Change the background color on hover */
+}
+
+.pimg{
+
+  flex:1;
+  overflow: hidden;
+  
+}
+.pimg img{
+  
+  weight:100%;
+  object-fit: cover;
+  height: 100%;
+  
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .images{
+    grid-column: 1;
+  }}
+
+
+/* Media query for screens with a maximum width of 600px (adjust as needed) */
+@media (max-width: 600px) {
+  .p1 {
+    margin: 10px; /* Further reduced margin for very small screens */
+  }
 }
